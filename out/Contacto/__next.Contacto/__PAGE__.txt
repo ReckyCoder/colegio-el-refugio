@@ -1,6 +1,0 @@
-1:"$Sreact.fragment"
-2:I[65103,["/_next/static/chunks/9a4dc3860fd146f1.js","/_next/static/chunks/60a9e95275db64ab.js"],"default"]
-3:I[24632,["/_next/static/chunks/3fb69ba87efef04e.js","/_next/static/chunks/d07fb1e3bee79bab.js"],"OutletBoundary"]
-4:"$Sreact.suspense"
-0:{"buildId":"EM7T9Hn7IOZEab5UOnE0w","rsc":["$","$1","c",{"children":[["$","main",null,{"className":"pt-80 pb-20 bg-blue-700 dark:bg-gray-900","children":["$","div",null,{"className":"flex flex-col gap-y-10 md:gap-y-0 md:px-10 md:gap-x-10 md:flex-row justify-center items-center","children":[["$","div",null,{"children":["$","$L2",null,{"src":"/contact/contact1.svg","alt":"imagen contacto","className":"w-100","width":1920,"height":1080}]}],["$","div",null,{"className":"text-center text-white flex flex-col items-center gap-y-5 max-w-md","children":[["$","h2",null,{"children":["¿Necesitas ",["$","span",null,{"className":"text-amber-300","children":"más información"}],"?"]}],["$","p",null,{"children":"  Si tienes dudas o necesitas orientación, escríbenos y con gusto te responderemos."}]]}]]}]}],null,["$","$L3",null,{"children":["$","$4",null,{"name":"Next.MetadataOutlet","children":"$@5"}]}]]}],"loading":null,"isPartial":false}
-5:null

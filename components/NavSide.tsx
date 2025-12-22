@@ -6,6 +6,7 @@ import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/out
 import { useWindowSize } from '@/hooks/useWindowSize';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { basePath } from "@/utils/basePath";
 
 type NavSideProps = {
     darkMode: boolean,
@@ -26,12 +27,12 @@ export default function NavSide({darkMode, toggleDarkMode} : NavSideProps) {
                 {darkMode === true ? 
                 (
                     <Link className="hover:scale-105 transition duration-200" href={'/'}>
-                    <Image className="w-30 h-30" alt="logo colegio" src={'/logo/insignia.svg'} width={1920} height={1920}/>
+                    <Image className="w-30 h-30" alt="logo colegio" src={`${basePath}/logo/insignia.svg`} width={1920} height={1920}/>
                     </Link>
                 ) : 
                 (
                     <Link className="hover:scale-105 transition duration-200" href={'/'}>
-                    <Image className="w-30 h-30" alt="logo colegio" src={'/logo/insignia.svg'} width={1920} height={1920}/>
+                    <Image className="w-30 h-30" alt="logo colegio" src={`${basePath}/logo/insignia.svg`} width={1920} height={1920}/>
                     </Link>
                 )}
                 <button type='button' onClick={() => navBarSet(!navBar)}>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
 import { siFacebook, siInstagram } from "simple-icons";
+import { basePath } from "@/utils/basePath";
 
 export default function Footer() {
 
@@ -12,7 +13,7 @@ export default function Footer() {
         <div className="flex flex-col items-center justify-between max-w-6xl mx-auto px-16">
             <div className="flex flex-col lg:flex-row items-center justify-between w-full lg:mb-5">
                 <Link className="hover:scale-105 transition duration-200" href={'/'}>
-                    <Image className="w-30 h-30" alt="logo colegio" src={'/logo/insignia.svg'} width={1920} height={1920}/>
+                    <Image className="w-30 h-30" alt="logo colegio" src={`${basePath}/logo/insignia.svg`} width={1920} height={1920}/>
                 </Link>
                 <div className="flex flex-col w-full lg:w-max items-center gap-y-5 lg:flex-row gap-x-4">
                     <Link href={'+11111111111'} className="flex group">

@@ -2,13 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import Description from "@/components/Description";
 import Stepper from "@/components/Stepper";
+import { basePath } from "@/utils/basePath";
 
 
 export default function Page() {
     return (
         <main className="flex flex-col items-center justify-center bg-stone-100 dark:bg-stone-800">
             <div className="w-full flex flex-col lg:flex-row gap-y-15 lg:gap-y-0 gap-x-20 mt-20 bg-blue-600 dark:bg-gray-900 pt-40 justify-center items-center pb-20">
-                <Image className="w-md" src={'/admision/sistemaDeAdmisionEscolar.png'} alt="image admision" width={1920} height={1080}/>
+                <Image className="w-md" src={`${basePath}/admision/sistemaDeAdmisionEscolar.png`} alt="image admision" width={1920} height={1080}/>
                 <div className="text-center flex flex-col gap-y-5 justify-center max-w-md">
                     <div className="text-white">
                         <h2>Proceso de Admisión.</h2>

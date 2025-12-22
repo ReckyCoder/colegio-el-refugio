@@ -7,6 +7,7 @@ import { useDarkMode } from "@/hooks/useDarkMode";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import NavSide from "./NavSide";
 import { usePathname } from "next/navigation";
+import { basePath } from "@/utils/basePath";
 
 export default function Header() {
 
@@ -23,12 +24,12 @@ export default function Header() {
           {darkMode === true ? 
           (
             <Link className="hover:scale-105 transition duration-200" href={'/'}>
-              <Image className="w-30 h-30" alt="logo colegio" src={'/logo/insignia.svg'} width={1920} height={1920}/>
+              <Image className="w-30 h-30" alt="logo colegio" src={`${basePath}/logo/insignia.svg`} width={1920} height={1920}/>
             </Link>
           ) : 
           (
             <Link className="hover:scale-105 transition duration-200" href={'/'}>
-              <Image className="w-30 h-30" alt="logo colegio" src={'/logo/insignia.svg'} width={1920} height={1920}/>
+              <Image className="w-30 h-30" alt="logo colegio" src={`${basePath}/logo/insignia.svg`} width={1920} height={1920}/>
             </Link>
           )}
           

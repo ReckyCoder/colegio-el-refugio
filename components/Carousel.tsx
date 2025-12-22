@@ -6,6 +6,7 @@ import Slider from "react-slick";
 import { carouselHome } from "@/seed/carouselHome";
 import Image from "next/image";
 import { ReactElement, JSXElementConstructor, ReactNode, ReactPortal } from "react";
+import { basePath } from "@/utils/basePath";
 
 
 type ArrowProps = {
@@ -54,7 +55,7 @@ export default function Carousel() {
                 <div key={index} className="flex justify-center items-center py-10">
                     <div className="flex flex-col md:flex-row justify-center items-center gap-y-20 gap-x-20 md:gap-x-10 px-3 relative">
                         <div className="w-full flex justify-center items-center">
-                            <Image className="z-1 w-80 my-auto bg-blue-900 dark:bg-blue-900 rounded-2xl p-10" src={item.image} alt="image carousel" width={1980} height={1080}/>
+                            <Image className="z-1 w-80 my-auto bg-blue-900 dark:bg-blue-900 rounded-2xl p-10" src={`${basePath + item.image}`} alt="image carousel" width={1980} height={1080}/>
                             <div className="w-11/12 md:w-87 absolute md:left-0 bg-amber-300 h-30 rounded-xl"></div>
                         </div>
                         <div className="z-1 text-stone-100 text-shadow-lg text-shadow-stone-800 flex flex-col gap-y-5">

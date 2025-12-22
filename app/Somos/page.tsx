@@ -4,6 +4,8 @@ import { AboutItem } from "@/seed/aboutItems"
 import { FlagIcon, EyeIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 import CountUp from "react-countup"
+import { basePath } from "@/utils/basePath";
+
 
 export default function Page() {
     return (
@@ -32,7 +34,7 @@ export default function Page() {
                             <p>{item.description}</p>
                         </div>
                         <div className="">
-                            <Image className={`${index === 2 ? 'w-30' : 'w-70'}`}src={item.image} alt="image about" width={1920} height={1080}/>
+                            <Image className={`${index === 2 ? 'w-30' : 'w-70'}`}src={`${ basePath + item.image}`} alt="image about" width={1920} height={1080}/>
                         </div>
                     </div>
                 ))}

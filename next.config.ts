@@ -8,7 +8,6 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   basePath: "/colegio-el-refugio",
-  assetPrefix: "/colegio-el-refugio/",
 };
 
 export default nextConfig;

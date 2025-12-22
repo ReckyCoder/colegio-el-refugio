@@ -1,12 +1,11 @@
-import Image from "next/image";
-import { basePath } from "@/utils/basePath";
+import AppImage from "@/components/AppImage";
 
 export default function Page() {
     return (
         <main className="pt-80 pb-20 bg-blue-700 dark:bg-gray-900">
             <div className="flex flex-col gap-y-10 md:gap-y-0 md:px-10 md:gap-x-10 md:flex-row justify-center items-center">
                 <div>
-                    <Image className="w-100" src={`${basePath}/contact/contact1.svg`} alt="imagen contacto" width={1920} height={1080}/>
+                    <AppImage src={'/contact/contact1.svg'} alt="imagen contacto" className="w-100" width={1920} height={1080}/>
                 </div>
                 <div className="text-center text-white flex flex-col items-center gap-y-5 max-w-md">
                     <h2>

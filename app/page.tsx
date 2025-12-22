@@ -3,6 +3,7 @@ import { items } from "@/seed/items";
 import Wave from "@/components/Wave";
 import Carousel from "@/components/Carousel";
 import { basePath } from "@/utils/basePath";
+import AppImage from "@/components/AppImage";
 
 export default function Home() {
 
@@ -11,7 +12,7 @@ export default function Home() {
       <Wave />
       <div className="flex w-full flex-col items-center py-10 px-16 bg-stone-100 dark:bg-stone-800 sm:items-start">
         <div className="grid grid-cols-1 gap-y-7 lg:gap-y-0 lg:flex gap-x-10 my-20 mx-auto">
-          <Image className="w-100 h-auto rounded-3xl mx-auto" alt="image class" src={`${basePath}/item/bgItem.jpg`} width={420} height={420}/>
+          <AppImage src="/item/bgItem.jpg" alt="imagen clase escolar" className="w-100 h-auto rounded-3xl mx-auto" width={420} height={420}/>
           <div className="text-center flex flex-col gap-y-4 my-auto">
             <h2 className="text-black dark:text-white">Aprender, crecer y <span className="text-blue-600">soñar juntos.</span></h2>
             <p className="text-black dark:text-white max-w-xl">En nuestro colegio fomentamos un ambiente seguro y acogedor donde los niños

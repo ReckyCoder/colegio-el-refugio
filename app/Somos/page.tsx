@@ -1,10 +1,9 @@
 "use client";
 
+import CountUp from "react-countup"
+import AppImage from "@/components/AppImage";
 import { AboutItem } from "@/seed/aboutItems"
 import { FlagIcon, EyeIcon } from "@heroicons/react/24/outline"
-import Image from "next/image"
-import CountUp from "react-countup"
-import { basePath } from "@/utils/basePath";
 
 
 export default function Page() {
@@ -33,8 +32,8 @@ export default function Page() {
                             <h2 className="text-blue-600 dark:text-amber-300">{item.title}</h2>
                             <p>{item.description}</p>
                         </div>
-                        <div className="">
-                            <Image className={`${index === 2 ? 'w-30' : 'w-70'}`}src={`${ basePath + item.image}`} alt="image about" width={1920} height={1080}/>
+                        <div>
+                            <AppImage src={item.image} alt="imagen sobre el sistema educativo" className={`${index === 2 ? 'w-30' : 'w-70'}`} width={1920} height={1080}/>
                         </div>
                     </div>
                 ))}

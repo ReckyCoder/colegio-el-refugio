@@ -1,7 +1,6 @@
 'use client';
 
 import Image from "next/image";
-import { basePath } from "@/utils/basePath";
 
 type AppImageProps = {
   src: string;
@@ -18,20 +17,7 @@ export default function AppImage({
   height,
   className,
 }: AppImageProps) {
-  const isGithubPages = basePath !== "";
 
-  // GitHub Pages → img nativo
-  if (isGithubPages) {
-    return (
-      <img
-        src={`${basePath}${src}`}
-        alt={alt}
-        className={className}
-      />
-    );
-  }
-
-  // Local / Vercel → next/image
   return (
     <Image
       src={src}

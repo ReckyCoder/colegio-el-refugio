@@ -1,12 +1,11 @@
 'use client';
 
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { useWindowSize } from "@/hooks/useWindowSize";
 import { useDarkMode } from "@/hooks/useDarkMode";
 import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
 import NavSide from "./NavSide";
-import { usePathname } from "next/navigation";
 import AppImage from "./AppImage";
 
 export default function Header() {
@@ -15,13 +14,12 @@ export default function Header() {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const pathName = usePathname();
 
-
   return (
     <header className=" bg-stone-100 dark:bg-stone-800 fixed w-full border-b-stone-700 dark:border-b-stone-100 z-3 border-b-1">
         {width > 768 ?
         (
           <div className={`flex items-center mx-auto max-w-6xl gap-x-4 justify-between px-10 py-4`}>
-          {darkMode === true ? 
+          {darkMode ? 
           (
             <Link className="hover:scale-105 transition duration-200" href={'/'}>
               <AppImage src={`/logo/insignia.svg`} alt="logo colegio" className="w-30 h-30" width={1920} height={1920}/>

@@ -13,8 +13,6 @@ export default function Form() {
 
     const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
 
-    const dateAnnio = new Date().getFullYear();
-
     const onSubmit = (data: FormData) => {
         console.log(data);
     }

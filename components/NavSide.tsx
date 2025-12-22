@@ -1,11 +1,11 @@
 'use client';
 
+import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { usePathname } from 'next/navigation';
+import { useState } from 'react';
 import Link from 'next/link';
 import AppImage from './AppImage';
 import { useWindowSize } from '@/hooks/useWindowSize';
-import { useState } from 'react';
-import { usePathname } from 'next/navigation';
-import { SunIcon, MoonIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 type NavSideProps = {
     darkMode: boolean,
@@ -23,7 +23,7 @@ export default function NavSide({darkMode, toggleDarkMode} : NavSideProps) {
         <nav className={`${width < 768 ? 'block relative' : 'hidden'}`}>
             <div className=''>
                 <div className="flex items-center mx-auto max-w-6xl gap-x-4 justify-between px-10 py-4">
-                {darkMode === true ? 
+                {darkMode ? 
                 (
                     <Link className="hover:scale-105 transition duration-200" href={'/'}>
                         <AppImage src={`/logo/insignia.svg`} alt="logo colegio" className="w-30 h-30" width={1920} height={1920}/>

@@ -9,9 +9,9 @@ import { FlagIcon, EyeIcon } from "@heroicons/react/24/outline"
 export default function Page() {
     return (
         <main className="flex flex-col items-center justify-center pt-38 bg-stone-100 dark:bg-stone-800">
-            <div className="bg-blue-700 dark:bg-gray-900 w-full relative">
+            <div className="bg-blue-700 dark:bg-gray-900 w-full relative text-white">
                 <h2 className="text-center mt-20 text-shadow-lg">Nuestro <span className="text-amber-300 dark:text-blue-600">Propósito</span> Educativo</h2>
-                <div className="max-w-4xl flex flex-col py-20 px-5 gap-y-10 gap-x-20 md:py-0 md:flex-row justify-center items-center text-center mx-auto">
+                <div className="max-w-4xl flex flex-col py-20 px-5 gap-y-10 gap-x-20 md:py-0 md:flex-row justify-center items-center text-center mx-auto text-white">
                     <div className="flex flex-col gap-y-5 items-center md:my-20">
                         <FlagIcon className="w-16 text-amber-300 dark:text-blue-600"/>
                         <h3 className="text-shadow-lg z-2">Nuestra <span className="text-amber-300 dark:text-blue-600">Misión.</span></h3>
@@ -38,7 +38,7 @@ export default function Page() {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col text-center gap-y-10 mt-10 bg-blue-600 dark:bg-gray-900 w-full py-20">
+            <div className="flex flex-col text-center gap-y-10 mt-10 bg-blue-600 dark:bg-gray-900 w-full py-20 text-white">
                 <div className="flex flex-col gap-y-5">
                     <span className="text-amber-300 dark:text-blue-600 font-bold text-5xl"><CountUp start={0} end={20} duration={2.5} separator=","/>+</span>
                     <p className="text-shadow-stone-700 text-shadow-sm text-xl max-w-lg mx-auto">Años acompañando el aprendizaje y el desarrollo de nuestros estudiantes.</p>

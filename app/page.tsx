@@ -2,7 +2,6 @@ import Image from "next/image";
 import { items } from "@/seed/items";
 import Wave from "@/components/Wave";
 import Carousel from "@/components/Carousel";
-import { basePath } from "@/utils/basePath";
 import AppImage from "@/components/AppImage";
 
 export default function Home() {
@@ -35,7 +34,7 @@ export default function Home() {
         </div>
       </div>
       <div className="w-full px-3 sm:px-5 md:px-10 pt-10 pb-20 bg-blue-700 dark:bg-gray-900">
-        <h2 className="text-center my-10 md:max-w-lg mx-auto font-bold">Acompañando cada etapa del aprendizaje</h2>
+        <h2 className="text-center my-10 md:max-w-lg mx-auto font-bold text-white">Acompañando cada etapa del aprendizaje</h2>
         <Carousel />
       </div>
     </main>

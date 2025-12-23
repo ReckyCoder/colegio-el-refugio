@@ -63,7 +63,7 @@ export default function Description() {
                 type='button'
               onClick={() => toggle(index)}
               aria-expanded={isOpen}
-              className={`flex w-full text-start items-center justify-between p-5 font-bold text-md dark:text-white ${isOpen ? 'bg-neutral-300 dark:bg-blue-600' : 'bg-stone-100 dark:bg-gray-900'} ${index === items.length - 1 ? '' : 'border-b border-default dark:border-gray-800'} hover:text-fg-brand hover:bg-brand-softer cursor-pointer`}
+              className={`flex w-full text-start items-center justify-between p-5 font-bold text-md text-black dark:text-white ${isOpen ? 'bg-neutral-300 dark:bg-blue-600' : 'bg-stone-100 dark:bg-gray-900'} ${index === items.length - 1 ? '' : 'border-b border-default dark:border-gray-800'} hover:text-fg-brand hover:bg-brand-softer cursor-pointer`}
             >
               <span>{item.title}</span>
 
@@ -91,7 +91,7 @@ export default function Description() {
                       ${isOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'}
                     `}>
                     {isOpen && (
-                      <div className={`p-5 dark:bg-gray-800 dark:text-white ${index === items.length - 1 ? 'border-t border-default dark:border-gray-800' : 'border-b border-default dark:border-gray-800'}`}>
+                      <div className={`p-5 dark:bg-gray-800 text-black dark:text-white ${index === items.length - 1 ? 'border-t border-default dark:border-gray-800' : 'border-b border-default dark:border-gray-800'}`}>
                         {item.content}
                       </div>
                     )}

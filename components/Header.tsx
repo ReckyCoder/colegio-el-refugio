@@ -32,10 +32,10 @@ export default function Header() {
           )}
           
           <div className="flex items-center gap-5">
-            <Link href={'/'} className={`${pathName === '/' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 transition duration-300`}>Inicio</Link>
-            <Link href={'/Somos'} className={`${pathName === '/Somos' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 transition duration-300`}>Quienes Somós</Link>
-            <Link href={'/Admision'} className={`${pathName === '/Admision' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 transition duration-300`}>Admisión</Link>
-            <Link href={'/Contacto'} className={`${pathName === '/Contacto' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 transition duration-300`}>Contacto</Link>
+            <Link href={'/'} className={`${pathName === '/' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 hover:text-blue-600 transition duration-300`}>Inicio</Link>
+            <Link href={'/Somos'} className={`${pathName === '/Somos' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 hover:text-blue-600 transition duration-300`}>Quienes Somós</Link>
+            <Link href={'/Admision'} className={`${pathName === '/Admision' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 hover:text-blue-600 transition duration-300`}>Admisión</Link>
+            <Link href={'/Contacto'} className={`${pathName === '/Contacto' ? 'text-blue-600 dark:text-blue-500 underline decoration-blue-600 underline-offset-8' : 'text-black dark:text-white' } hover:underline hover:decoration-blue-600 hover:underline-offset-8 hover:text-blue-600 transition duration-300`}>Contacto</Link>
             <button 
             type="button"
             className={`cursor-pointer hover:scale-105 transition-transform hover:rotate-2`}

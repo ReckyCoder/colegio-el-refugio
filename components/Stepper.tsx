@@ -2,7 +2,7 @@ import { CalendarDateRangeIcon, PencilIcon, PhoneIcon } from "@heroicons/react/2
 
 export default function Stepper() {
     return (
-        <ol className="items-center flex flex-col gap-y-10 lg:flex-row text-black dark:text-white max-w-6xl">
+        <ol className="items-center flex flex-col gap-y-10 lg:flex-row text-black dark:text-white max-w-6xl px-5 md:px-20">
             <li className="relative mb-6 sm:mb-0">
                 <div className="flex items-center">
                     <span className="bg-blue-600 text-white text-sm font-medium px-1.5 rounded-full">1</span>
@@ -13,7 +13,7 @@ export default function Stepper() {
                         <div className=" flex items-center justify-center w-6 h-6 bg-brand-softer rounded-full">
                             <PencilIcon />
                         </div>
-                        <h3 className="text-lg font-semibold text-heading my-2 text-nowrap">Registro y postulación.</h3>
+                        <h3 className="text-lg font-semibold text-heading my-2 lg:text-nowrap">Registro y postulación.</h3>
                     </div>
                     <p className="text-body mb-4">Ingresa al Sistema de Admisión Escolar, regístrate con tus datos y selecciona nuestro colegio como una de tus preferencias.</p>
                 </div>
@@ -28,7 +28,7 @@ export default function Stepper() {
                         <div className=" flex items-center justify-center w-6 h-6 bg-brand-softer rounded-full">
                             <CalendarDateRangeIcon />
                         </div>
-                        <h3 className="text-lg font-semibold text-heading my-2 text-nowrap">Revisión y asignación.</h3>
+                        <h3 className="text-lg font-semibold text-heading my-2 lg:text-nowrap">Revisión y asignación.</h3>
                     </div>
                     <p className="text-body mb-4">El sistema procesa las postulaciones según lo establecido por el Ministerio de Educación. Durante este período, solo debes esperar los resultados.</p>
                 </div>
@@ -43,7 +43,7 @@ export default function Stepper() {
                         <div className=" flex items-center justify-center w-6 h-6 bg-brand-softer rounded-full">
                             <PhoneIcon />
                         </div>
-                        <h3 className="text-lg font-semibold text-heading my-2 text-nowrap">Resultados y confirmación.</h3>
+                        <h3 className="text-lg font-semibold text-heading my-2 lg:text-nowrap">Resultados y confirmación.</h3>
                     </div>
                     <p className="text-body mb-4">Revisa los resultados en el Sistema de Admisión Escolar. Si eres asignado a nuestro colegio, te contactaremos para continuar con el proceso de matrícula.</p>
                 </div>

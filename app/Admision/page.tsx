@@ -21,7 +21,7 @@ export default function Page() {
                     </div>
                 </div>
             </div>
-            <div className="px-20 md:px-3 pt-20">
+            <div className=" md:px-3 pt-20">
                 <Stepper/>
             </div>
             <div className="w-full px-10">

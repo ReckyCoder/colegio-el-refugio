@@ -32,7 +32,7 @@ export default function Page() {
                     Descarga o revisa nuestro documento institucional con información general,
                     proyecto educativo y aspectos relevantes de nuestra comunidad escolar.
                 </p>
-                <div className="flex justify-center gap-x-5 mt-10">
+                <div className="flex flex-col sm:flex-row justify-center gap-x-5 mt-10 items-center gap-y-5">
                     <Link href={'/pdf/colegio.pdf'} download={true} className="bg-red-600 px-2 py-1 rounded flex flex-row-reverse gap-x-2 w-min"><ArrowDownTrayIcon className="w-6 h-6"/>PDF</Link>
                     <Link href={'/pdf/colegio.pdf'} target="_blank" className="bg-red-600 px-2 py-1 rounded flex flex-row-reverse gap-x-2 w-min"><CursorArrowRaysIcon className="w-6 h-6"/>PDF</Link>
                 </div>

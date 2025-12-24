@@ -29,6 +29,11 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Colegio El Refugio",
   description: "Colegio El Refugio - Educación de calidad en un entorno seguro y acogedor para el desarrollo integral de los niños.",
+  icons: {
+    icon: '/logo/insignia.jpg',
+    shortcut: '/logo/insignia.jpg',
+    apple: '/logo/insignia.jpg',
+  }
 };
 
 export default function RootLayout({

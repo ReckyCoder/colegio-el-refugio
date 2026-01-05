@@ -7,7 +7,7 @@ const nodemailer = require("nodemailer");
 export async function sendFormData(data: FormContact) {
     
     const transporter = nodemailer.createTransport({
-        host: "mail.redessupport.cl",
+        host: process.env.HOST,
         port: 465,
         secure: true,
         auth: {

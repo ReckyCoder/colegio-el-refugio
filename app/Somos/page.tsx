@@ -2,6 +2,7 @@ import CountUp from "react-countup"
 import AppImage from "@/components/AppImage";
 import { FlagIcon, EyeIcon } from "@heroicons/react/24/outline"
 import { AboutItem } from "@/seed/aboutItems"
+import StatsCounter from "@/components/StatsCounter";
 
 
 export default function Page() {
@@ -36,30 +37,7 @@ export default function Page() {
                     </div>
                 ))}
             </div>
-            <div className="flex flex-col text-center gap-y-10 mt-10 bg-blue-600 dark:bg-gray-900 w-full py-20 text-white">
-                <div className="flex flex-col gap-y-5">
-                    <span className="text-amber-300 dark:text-blue-600 font-bold text-5xl"><CountUp start={0} end={20} duration={2.5} separator=","/>+</span>
-                    <p className="text-shadow-stone-700 text-shadow-sm text-xl max-w-lg mx-auto">Años acompañando el aprendizaje y el desarrollo de nuestros estudiantes.</p>
-                </div>
-                <div className="flex flex-col sm:flex-row justify-center gap-x-10 gap-y-10 sm:gap-y-0 *:after:border-s-2 *:after:h-5 *:after:mt-3 *:after:text-amber-300 dark:*:after:text-blue-600">
-                    <div className="flex flex-col items-center gap-y-2">
-                        <span className="text-amber-300 dark:text-blue-600 font-bold text-2xl"><CountUp start={0} end={12500} duration={2.5} separator=","/>+</span>
-                        <p className="text-shadow-stone-700 text-shadow-sm">Estudiantes formados.</p>
-                    </div>
-                    <div className="flex flex-col items-center gap-y-2">
-                        <span className="text-amber-300 dark:text-blue-600 font-bold text-2xl"><CountUp start={0} end={100} duration={2.5} separator=","/>+</span>
-                        <p className="text-shadow-stone-700 text-shadow-sm">Cursos impartidos.</p>
-                    </div>
-                    <div className="flex flex-col items-center gap-y-2">
-                        <span className="text-amber-300 dark:text-blue-600 font-bold text-2xl"><CountUp start={0} end={230} duration={2.5} separator=","/>+</span>
-                        <p className="text-shadow-stone-700 text-shadow-sm">Docentes y asistentes.</p>
-                    </div>
-                    <div className="flex flex-col items-center gap-y-2">
-                        <span className="text-amber-300 dark:text-blue-600 font-bold text-2xl"><CountUp start={0} end={500} duration={2.5} separator=","/>+</span>
-                        <p className="text-shadow-stone-700 text-shadow-sm">Familias que confían.</p>
-                    </div>
-                </div>
-            </div>
+            <StatsCounter />
         </main>
     )
 }

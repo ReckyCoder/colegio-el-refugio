@@ -1,5 +1,3 @@
-'use client';
-
 export default function Wave() {
     return (
         <div className="bg-blue-700 dark:bg-gray-900 w-full text-white">

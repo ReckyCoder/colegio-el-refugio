@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";
+import Providers from "./provider";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -71,8 +72,10 @@ export default function RootLayout({
         className={`${montserrat.variable} ${openSans.variable} antialiased bg-white dark:bg-black`}
       >
         <Header/>
-        {children}
-        <Form />
+        <Providers>
+            {children}
+            <Form />
+        </Providers>
         <Footer/>
       </body>
     </html>

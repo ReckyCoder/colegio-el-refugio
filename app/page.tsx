@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { items } from "@/seed/items";
 import Wave from "@/components/Wave";
 import Carousel from "@/components/Carousel";

@@ -9,3 +9,9 @@ export type CarouselHome = Pick<Item, "title" | "description"> & {
 }
 
 export type AboutItems = CarouselHome;
+
+export type FormContact = {
+    nombre: string;
+    correo: string;
+    mensaje: string;
+}

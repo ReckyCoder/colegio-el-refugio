@@ -1,9 +1,7 @@
-"use client";
-
 import CountUp from "react-countup"
 import AppImage from "@/components/AppImage";
-import { AboutItem } from "@/seed/aboutItems"
 import { FlagIcon, EyeIcon } from "@heroicons/react/24/outline"
+import { AboutItem } from "@/seed/aboutItems"
 
 
 export default function Page() {

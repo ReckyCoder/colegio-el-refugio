@@ -1,20 +1,25 @@
 'use client';
 
 import { useForm } from "react-hook-form";
+import { ToastContainer } from 'react-toastify';
+import useFormQuery from "@/lib/useFormQuery";
+import type { FormContact } from "@/types/types";
 import { nameRegex, onlyNameChars } from "@/utils/validators";
-
-type FormData = {
-    nombre: string;
-    correo: string;
-    mensaje: string;
-}
+import { ClipLoader } from "react-spinners";
+import { useEffect } from "react";
 
 export default function Form() {
 
-    const { register, handleSubmit, formState: { errors } } = useForm<FormData>();
+    const { mutate, isPending, isSuccess, data } = useFormQuery();
+    const { register, handleSubmit, reset , formState: { errors } } = useForm<FormContact>();
 
-    const onSubmit = (data: FormData) => {
-        console.log(data);
+    useEffect(() => {
+        if(isSuccess) reset();
+    }, [isSuccess, reset])
+
+    const onSubmit = (formData: FormContact) => {
+        mutate(formData);
+        console.log(data?.success)
     }
 
     return (
@@ -75,8 +80,18 @@ export default function Form() {
                         {errors.mensaje && <p className="text-red-500 text-sm font-bold">{errors.mensaje.message}</p>}
                     </div>
                 </div>
-                <button className="bg-blue-600 px-2 py-1 rounded p-1 text-white mx-auto mt-8 cursor-pointer hover:opacity-90 transition-all" type="submit">Enviar</button>
+                {isPending ? 
+                (
+                    <div className="w-min flex mx-auto mt-8 bg-blue-600 px-4 py-1 rounded">
+                        <ClipLoader color={"#ffffff"} size={25} aria-label="Loading Spinner" data-testid="loader"/>
+                    </div>
+                ) : 
+                (
+                    <button className="bg-blue-600 px-2 py-1 rounded p-1 text-white mx-auto mt-8 cursor-pointer hover:opacity-90 transition-all" type="submit">Enviar</button>
+                )
+                }
             </form>
+            <ToastContainer/>
         </div>
     )
 }

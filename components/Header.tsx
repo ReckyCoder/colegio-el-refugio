@@ -24,7 +24,7 @@ export default function Header() {
   if (!mounted) return null;
 
   return (
-    <header className=" bg-stone-100 dark:bg-stone-800 fixed w-full border-b-stone-700 dark:border-b-stone-100 z-3 border-b-1">
+    <header className=" bg-stone-100 dark:bg-stone-800 fixed w-full z-3">
         {width > 768 ?
         (
           <div className={`flex items-center mx-auto max-w-6xl gap-x-4 justify-between px-10 py-4`}>

@@ -45,7 +45,7 @@ export default function NavSide({theme, setTheme, width} : NavSideProps) {
                 </button>
                 </div>
             </div>
-            <div className={`flex flex-col items-center pb-5 absolute w-full z-3 transition-all duration-300 bg-stone-800 ${navBar ? 'block opacity-100 top-38.5' : 'opacity-0 top-30 invisible'}`}>
+            <div className={`flex flex-col items-center pb-5 absolute w-full z-3 transition-all duration-300 dark:border-t-stone-100 dark:border-b-stone-100 z-3 dark:border-t-1 dark:border-b-1 bg-stone-800 ${navBar ? 'block opacity-100 top-38' : 'opacity-0 top-30 invisible'}`}>
                 <Link href={'/'} className={`${pathName === '/' ? 'text-blue-600 underline decoration-blue-600 underline-offset-8' : 'text-white'} hover:bg-gray-700 hover:shadow hover:text-blue-600 transition duration-300 w-full text-center py-4`}>Inicio</Link>
                 <Link href={'/Somos'} className={`${pathName === '/Somos' ? 'text-blue-600 underline decoration-blue-600 underline-offset-8' : 'text-white'} hover:bg-gray-700 hover:shadow hover:text-blue-600 transition duration-300 w-full text-center py-4`}>Quienes Somós</Link>
                 <Link href={'/Admision'} className={`${pathName === '/Admision' ? 'text-blue-600 underline decoration-blue-600 underline-offset-8' : 'text-white'} hover:bg-gray-700 hover:shadow hover:text-blue-600 transition duration-300 w-full text-center py-4`}>Admisión</Link>

@@ -24,7 +24,7 @@ export default function Footer() {
                         <span className="text-white ms-3 group-hover:underline group-hover:decoration-white group-hover:underline-offset-4 transition duration-300">correo@hotmail.com</span>
                     </Link>
                     <Link target="_blank" className="flex group" href={'https://www.google.com/maps/place/Los+Guindos+1000,+9760374+Penaflor,+Pe%C3%B1aflor,+Regi%C3%B3n+Metropolitana/@-33.6086168,-70.8740938,17z/data=!3m1!4b1!4m6!3m5!1s0x9662e6cd00f7ec25:0x6e55271e4ac72f6f!8m2!3d-33.6086168!4d-70.8740938!16s%2Fg%2F11h1htqnb4?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D'}>
-                        <MapPinIcon className="h-6 w-6 group-hover:scale-110 transition-transform group-hover:rotate-12 cursor-pointer"/>
+                        <MapPinIcon className="h-6 w-6 text-white group-hover:scale-110 transition-transform group-hover:rotate-12 cursor-pointer"/>
                         <span className="text-white ms-3 group-hover:underline group-hover:decoration-white group-hover:underline-offset-4 transition duration-300">Los Guindos 1000, Peñaflor</span>
                     </Link>
                 </div>
@@ -56,7 +56,7 @@ export default function Footer() {
                     </Link>
                 </div>
                 <div>
-                    <p>&copy; {date} El Refugio. Todos los derechos reservados.</p>
+                    <p className="text-white">&copy; {date} El Refugio. Todos los derechos reservados.</p>
                 </div>
             </div>
         </div>

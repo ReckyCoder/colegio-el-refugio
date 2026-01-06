@@ -2,7 +2,7 @@ import { CalendarDateRangeIcon, PencilIcon, PhoneIcon } from "@heroicons/react/2
 
 export default function Stepper() {
     return (
-        <ol className="items-center flex flex-col gap-y-10 lg:flex-row text-black dark:text-white max-w-6xl px-5 md:px-20">
+        <ol className="items-center flex flex-col gap-y-10 lg:flex-row text-black dark:text-white max-w-6xl px-5 md:px-0">
             <li className="relative mb-6 sm:mb-0">
                 <div className="flex items-center">
                     <span className="bg-blue-600 text-white text-sm font-medium px-1.5 rounded-full">1</span>

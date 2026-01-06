@@ -11,7 +11,7 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
-
+/* 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #323232;
@@ -22,9 +22,9 @@
     border-radius: 2px;
     color: var(--background);
   }
-}
+} */
 
-@custom-variant dark (&:where(.dark, .dark *));
+@variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
 body {
   background: var(--background);

@@ -2,8 +2,8 @@ import AppImage from "@/components/AppImage";
 
 export default function Page() {
     return (
-        <main className="pt-80 pb-20 bg-blue-700 dark:bg-gray-900">
-            <div className="flex flex-col gap-y-10 md:gap-y-0 md:px-10 md:gap-x-10 md:flex-row justify-center items-center">
+        <main className="pt-38 bg-stone-100 dark:bg-stone-800">
+            <div className="py-20 flex flex-col gap-y-10 md:gap-y-0 md:px-10 md:gap-x-10 md:flex-row justify-center items-center bg-blue-600 dark:bg-gray-900">
                 <div>
                     <AppImage src={'/contact/contact1.svg'} alt="imagen contacto" className="w-100" width={1920} height={1080}/>
                 </div>

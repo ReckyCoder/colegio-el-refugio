@@ -1,7 +1,6 @@
 import { useMutation } from "@tanstack/react-query";
-import { sendFormData } from "@/actions/contactAction";
 import { toast } from "react-toastify";
-
+import { sendFormData } from "@/actions/contactAction";
 
 export default function useFormQuery() {
     return useMutation({

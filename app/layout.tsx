@@ -5,6 +5,7 @@ import "./globals.css";
 import Footer from "@/components/Footer";
 import Form from "@/components/Form";
 import Providers from "./provider";
+import { ThemeProvider } from "next-themes";
 
 // const geistSans = Geist({
 //   variable: "--font-geist-sans",
@@ -46,37 +47,18 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script
-          // biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation>
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                try {
-                  const stored = localStorage.getItem('isDarkMode');
-                  if (stored === "true") {
-                    document.documentElement.classList.add('dark');
-                  } else if (stored === "false") {
-                    document.documentElement.classList.remove('dark');
-                  } else {
-                    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-                      document.documentElement.classList.add('dark');
-                    }
-                  }
-                } catch (e) {}
-              })();
-            `,
-          }}
-        />
       </head>
       <body
-        className={`${montserrat.variable} ${openSans.variable} antialiased bg-white dark:bg-black`}
+        className={`${montserrat.variable} ${openSans.variable} antialiased bg-stone-100 dark:bg-stone-800`}
       >
-        <Header/>
-        <Providers>
-            {children}
-            <Form />
-        </Providers>
-        <Footer/>
+        <ThemeProvider>
+          <Header/>
+          <Providers>
+              {children}
+              <Form />
+          </Providers>
+          <Footer/>
+        </ThemeProvider>
       </body>
     </html>
   );

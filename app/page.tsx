@@ -6,9 +6,9 @@ import AppImage from "@/components/AppImage";
 export default function Home() {
 
   return (
-    <main className="flex flex-col items-center justify-center pt-38">
+    <main className="flex flex-col items-center justify-center pt-38 bg-stone-100 dark:bg-stone-800">
       <Wave />
-      <div className="flex w-full flex-col items-center py-10 px-16 bg-stone-100 dark:bg-stone-800 sm:items-start">
+      <div className="flex w-full flex-col items-center py-10 px-16 sm:items-start">
         <div className="grid grid-cols-1 gap-y-7 lg:gap-y-0 lg:flex gap-x-10 my-20 mx-auto">
           <AppImage src="/item/bgItem.jpg" alt="imagen clase escolar" className="w-100 h-auto rounded-3xl mx-auto" width={420} height={420}/>
           <div className="text-center flex flex-col gap-y-4 my-auto">

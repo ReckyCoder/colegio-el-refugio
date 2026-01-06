@@ -8,8 +8,8 @@ import { CursorArrowRaysIcon } from "@heroicons/react/24/outline";
 
 export default function Page() {
     return (
-        <main className="flex flex-col items-center justify-center bg-stone-100 dark:bg-stone-800">
-            <div className="w-full flex flex-col lg:flex-row gap-y-15 lg:gap-y-0 gap-x-20 mt-20 bg-blue-600 dark:bg-gray-900 pt-40 justify-center items-center pb-20">
+        <main className="flex flex-col items-center justify-center pt-38 bg-stone-100 dark:bg-stone-800">
+            <div className="w-full flex flex-col lg:flex-row gap-y-15 lg:gap-y-0 gap-x-20 bg-blue-600 dark:bg-gray-900 py-20 justify-center items-center">
                 <AppImage src={'/admision/sistemaDeAdmisionEscolar.png'} alt="imagen admisión escolar" className="w-md" width={1920} height={1080}/>
                 <div className="text-center flex flex-col gap-y-5 justify-center max-w-md">
                     <div className="text-white">
